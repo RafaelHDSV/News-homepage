@@ -61,6 +61,12 @@
     nav ul li {
       font-weight: 400;
       color: var(--dark_grayish_blue);
+      cursor: pointer;
+      transition: .5s all ease;
+    }
+
+    nav ul li:hover {
+      color: var(--soft_red);
     }
 
     main {
@@ -95,8 +101,8 @@
 
     .main_new .text h1 {
       font-weight: 800;
-      font-size: 52px;
-      max-width: 20rem;
+      font-size: 64px;
+      max-width: 25rem;
       width: 100%;
     }
 
@@ -104,11 +110,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      max-width: 23rem;
+      max-width: 27rem;
       width: 100%;
     }
 
     .main_new .text .secundary_text p {
+      font-size: 18px;
       font-weight: 400;
       line-height: 1.7rem;
       color: var(--dark_grayish_blue);
@@ -126,13 +133,19 @@
       text-transform: uppercase;
       letter-spacing: .2rem;
       font-weight: 700;
+      cursor: pointer;
+      transition: 1s all ease;
+    }
+
+    .main_new .text .secundary_text button:hover {
+      background-color: var(--very_dark_blue);
     }
 
     .new_news {
       display: flex;
       flex-direction: column;
       max-width: 30rem;
-      max-height: 42rem;
+      max-height: 45rem;
       width: 100%;
       height: 100vh;
       background-color: var(--very_dark_blue);
@@ -147,7 +160,7 @@
 
     .new_news .container_new {
       display: flex;
-      padding: 3rem 0;
+      padding: 2.5rem 0;
       gap: 1rem;
       border-bottom: 1px solid var(--grayish_blue);
       flex-direction: column;
@@ -157,6 +170,12 @@
       font-size: 20px;
       font-weight: 700;
       color: var(--off_white);
+      cursor: pointer;
+      transition: .5s all ease;
+    }
+
+    .new_news .container_new h3:hover {
+      color: var(--soft_orange);
     }
 
     .new_news .container_new p {
@@ -169,6 +188,59 @@
 
     .new_news .container_new:nth-child(4) {
       border: none;
+    }
+
+    .top_news {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 3rem 0;
+    }
+
+    .container_new_top {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      max-width: 25rem;
+      width: 100%;
+    }
+
+    .container_new_top img {
+      max-width: 8rem;
+      width: 100%;
+    }
+
+    .text_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-height: 10rem;
+      height: 100vh;
+    }
+
+    .text_top span {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--grayish_blue);
+    }
+
+    .text_top h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--very_dark_blue);
+    }
+
+    .text_top h4:hover {
+      color: var(--soft_red);
+    }
+
+    .text_top p {
+      font-weight: 300;
+      color: var(--dark_grayish_blue);
     }
 
     .attribution {
@@ -244,27 +316,37 @@
     </div>
   </main>
 
-  <!-- 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+  <div class="top_news">
+    <div class="container_new_top">
+      <img src="images/image-retro-pcs.jpg" alt="image-retro-pcs.jpg">
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <div class="text_top">
+        <span>01</span>
+        <h4>Reviving Retro PCs</h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    <div class="container_new_top">
+      <img src="images/image-top-laptops.jpg" alt="image-top-laptops.jpg">
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <div class="text_top">
+        <span>02</span>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+    <div class="container_new_top">
+      <img src="images/image-gaming-growth.jpg" alt="image-gaming-growth.jpg">
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities. -->
+      <div class="text_top">
+        <span>03</span>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- <footer class=" attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
