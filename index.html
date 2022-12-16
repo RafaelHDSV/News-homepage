@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta name="author" content="Rafael Henrique de Sousa Vieira">
+  <meta name="keywords"
+    content="programação, html, css, frontend mentor, News homepage, Rafael Henrique de Sousa Vieira, Frontend, Front, end">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <title>Frontend Mentor | News homepage</title>
 
@@ -62,7 +67,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: top;
       width: 100%;
       padding: 3rem 0;
     }
@@ -73,11 +78,11 @@
       justify-content: center;
       align-items: flex-start;
       gap: 2rem;
+      margin: 0 2rem 0 0;
     }
 
     .main_new img {
-      /* CORRIGIR */
-      max-width: 50rem;
+      max-width: fit-content;
       width: 100%;
     }
 
@@ -121,6 +126,49 @@
       text-transform: uppercase;
       letter-spacing: .2rem;
       font-weight: 700;
+    }
+
+    .new_news {
+      display: flex;
+      flex-direction: column;
+      max-width: 30rem;
+      max-height: 42rem;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--very_dark_blue);
+      padding: 2rem;
+    }
+
+    .new_news h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--soft_orange)
+    }
+
+    .new_news .container_new {
+      display: flex;
+      padding: 3rem 0;
+      gap: 1rem;
+      border-bottom: 1px solid var(--grayish_blue);
+      flex-direction: column;
+    }
+
+    .new_news .container_new h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--off_white);
+    }
+
+    .new_news .container_new p {
+      font-weight: 400;
+      word-spacing: .5rem;
+      line-height: 2rem;
+      color: var(--grayish_blue);
+      width: 100%;
+    }
+
+    .new_news .container_new:nth-child(4) {
+      border: none;
     }
 
     .attribution {
