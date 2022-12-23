@@ -1,8 +1,8 @@
 # Frontend Mentor - News homepage solution
 
-![GitHub repo size](https://img.shields.io/github/repo-sizeRafaelHDSV/News-homepage?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/countRafaelHDSV/News-homepage?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forksRafaelHDSV/News-homepage?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/News-homepage?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/News-homepage?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/News-homepage?style=for-the-badge)
 
 <img src="bg.jpg" alt="bg.jpg">
 
@@ -60,4 +60,4 @@ Users should be able to:
 - CSS Grid
 - Javascript properties-->
 
-[⬆ Back to the top](#name_of_repository)<br>
+[⬆ Back to the top](#frontend-mentor---news-homepage-solution)<br>
