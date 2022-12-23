@@ -202,8 +202,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 10rem;
-    height: 100vh;
+    height: 100%;
 }
 
 .text_top span {
